@@ -1,0 +1,40 @@
+@import "fonts";
+@import "vars";
+@import "settings";
+
+
+// Страницы
+@import "./pages/home";
+@import "./pages/news";
+@import "./pages/one-news";
+@import "./pages/enrollee";
+@import "./pages/profile";
+@import "./pages/edit-profile";
+@import "./pages/professors";
+@import "./pages/tasks";
+@import "./pages/achievements";
+@import "./pages/portfolio";
+
+
+// Компоненты
+
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/profile-menu";
+@import "./components/info-modal";
+@import "./components/loader";
+
+
+
+@import "./media/media-home";
+@import "./media/media-header";
+@import "./media/media-footer";
+@import "./media/media-news";
+@import "./media/media-one-news";
+@import "./media/media-profile";
+@import "./media/media-edit-profile";
+@import "./media/media-professors";
+@import "./media/media-tasks";
+@import "./media/media-achievements";
+@import "./media/media-portfolio";
