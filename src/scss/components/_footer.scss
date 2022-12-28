@@ -1,6 +1,5 @@
 .footer {
   padding: 36px 0 33px;
-  background: #303094;
 
   &__top {
     display: flex;
@@ -25,7 +24,7 @@
     @include montserrat-semibold;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #151616;
 
   }
 
@@ -33,7 +32,7 @@
     @include montserrat-regular;
     font-size: 13px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: #151616;
 
   }
 
@@ -43,7 +42,7 @@
       font-size: 13px;
       line-height: 16px;
       text-decoration-line: underline;
-      color: #FFFFFF;
+      color: #151616;
     }
   }
 
@@ -52,14 +51,12 @@
       @include montserrat-regular;
       font-size: 16px;
       line-height: 20px;
-      color: #FFFFFF;
-      position: relative;
+      color: #151616;
+      display: flex;
+      align-items: center;
 
       svg {
-        position: absolute;
-        left: -37px;
-        top: 50%;
-        transform: translateY(-50%);
+        margin-right: 3px;
       }
     }
   }
@@ -81,13 +78,13 @@
       @include montserrat-regular;
       font-size: 15px;
       line-height: 18px;
-      color: rgba(#ffffff, 0.5);
+      color: #A1A2A2;
 
       a {
         @include montserrat-regular;
         font-size: 15px;
         line-height: 18px;
-        color: rgba(#ffffff, 0.5);
+        color: #A1A2A2;
         padding-left: 30px;
         position: relative;
 
@@ -107,7 +104,7 @@
     font-size: 15px;
     line-height: 18px;
     padding-left: 36px;
-    color: rgba(#ffffff, 0.5);
+    color: #A1A2A2;
     position: relative;
     svg {
       opacity: 0.5;

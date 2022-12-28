@@ -1,36 +1,10 @@
-@media (max-width: 1500px) {
-  .home-page .accounting__contacts {
-    padding-left: 0;
-    justify-content: space-between;
-  }
-
-  .home-page .accounting__contacts-title {
-    margin-right: 30px;
-  }
-
-  .home-page .accounting__contacts-email {
-    margin-right: 30px;
-  }
-}
-
 @media (max-width: 1280px) {
-  .home-page .accounting__inner {
-    padding: 57px 40px 45px 30px;
+  .home-page .media-center__photos {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-
-  .home-page .accounting__content-img {
-    position: relative;
-    padding-top: 31.5%;
-    width: 44%;
-    margin-right: 60px;
-  }
-
-  .home-page .accounting__contacts-title {
-    margin-right: 25px;
-  }
-
-  .home-page .accounting__contacts-email {
-    margin-right: 25px;
+  .home-page .caption-slider .caption-swiper img {
+    min-height: 380px;
   }
 
 
@@ -54,45 +28,9 @@
     width: 98%;
     top: 42%;
   }
-
-  .home-page .caption-slider .caption-swiper__img {
-    padding-top: 26%;
-  }
-
-  .home-page .accounting__inner {
-    padding: 40px 30px 45px 30px;
-  }
-
-  .home-page .accounting__content-img {
-    padding-top: 34.5%;
-    width: 48%;
-    margin-right: 30px;
-  }
-
-  .home-page .accounting__title {
-    font-size: 35px;
-    line-height: 50px;
-    margin-bottom: 15px;
-    min-width: 320px;
-  }
-
-  .home-page .accounting__subtitle {
-    font-size: 19px;
-    line-height: 25px;
-    margin-bottom: 10px;
-  }
-
-  .home-page .accounting__contacts-title {
-    font-size: 22px;
-    line-height: 28px;
+  .home-page .media-center__photo {
     max-width: 170px;
   }
-
-  .home-page .accounting__contacts br {
-    display: block;
-  }
-
-
   .home-page .ads .container {
     flex-direction: column;
   }
@@ -105,7 +43,6 @@
   .home-page .ads__aside {
     width: 100%;
     padding: 32px 22px 29px;
-    background: #F3F4F5;
     border-radius: 12px;
   }
 
@@ -127,6 +64,22 @@
     font-size: 16px;
     line-height: 20px;
     padding: 18px 15px;
+  }
+  .home-page .feedback__form-left,
+  .home-page .feedback__form-right{
+    width: 49%;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-page .media-center .container {
+    flex-direction: column;
+  }
+  .home-page .media-center__inner {
+    margin-bottom: 20px;
+  }
+  .home-page .media-center__content {
+    max-width: 100%;
   }
 }
 
@@ -162,46 +115,6 @@
     padding: 17px 70px;
   }
 
-  .home-page .accounting {
-    margin-bottom: 60px;
-  }
-
-  .home-page .accounting__title {
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 15px;
-    min-width: 270px;
-    max-width: 270px;
-  }
-
-
-  .home-page .accounting__content-img {
-    display: none;
-  }
-
-  .home-page .accounting__content-text {
-    width: 100%;
-  }
-
-  .home-page .accounting__contacts {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .home-page .accounting__contacts-title {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-
-  .home-page .accounting__contacts-email {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .home-page .accounting__contacts br {
-    display: none;
-  }
 
   .home-page .news {
     margin-bottom: 100px;
@@ -249,7 +162,7 @@
     margin-top: 5px;
   }
 
-  .home-page .feedback__checkbox + label{
+  .home-page .feedback__checkbox + label {
     align-items: flex-start;
   }
 }
