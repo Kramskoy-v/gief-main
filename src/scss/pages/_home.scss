@@ -24,10 +24,12 @@
         right: -150px;
         bottom: 60px;
       }
+
       &._p {
         left: -200px;
         bottom: 80px;
       }
+
       &._t {
         right: -140px;
         bottom: 390px;
@@ -96,10 +98,12 @@
   .swiper {
     margin: 0 -23px;
     padding: 0 23px;
+
     img {
       display: block;
       margin: auto;
     }
+
     &__controls {
       width: 100%;
       position: absolute;
@@ -161,7 +165,7 @@
       img {
         border-radius: 15px 15px 0 0;
         display: block;
-        min-height:460px;
+        min-height: 460px;
         object-fit: cover;
       }
 
@@ -692,6 +696,7 @@
       background-image: url("../img/feedback_bg.png");
       background-repeat: no-repeat;
       background-position: center top;
+      background-size: cover;
     }
 
     &__title {

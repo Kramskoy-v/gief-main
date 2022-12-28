@@ -1,4 +1,4 @@
-import { Swiper } from "swiper/bundle";
+import {Swiper} from "swiper/bundle";
 
 const swiperCaption = new Swiper('.caption-swiper', {
   navigation: {
@@ -21,18 +21,15 @@ const swiperNews = new Swiper('.news-swiper', {
   noSwipingClass: 'swiper-no-swiping',
 
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 40,
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 15
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 20
     },
     1280: {
-      spaceBetween: 40,
       slidesPerView: 4,
     },
   }
@@ -49,18 +46,15 @@ const swiperFaculty = new Swiper('.faculty-swiper', {
   noSwipingClass: 'swiper-no-swiping',
 
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 25,
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 15
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 20
     },
     1280: {
-      spaceBetween: 25,
       slidesPerView: 4,
     },
   }
@@ -78,19 +72,19 @@ const swiperSponsors = new Swiper('.sponsors-swiper', {
   breakpoints: {
 
     600: {
-      slidesPerView: 32,
-
+      slidesPerView: 2,
     },
 
     768: {
       slidesPerView: 3,
-
     },
     1024: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 45
     },
-
+    1400: {
+      slidesPerView: 5,
+    },
   }
 });
 
