@@ -23,6 +23,23 @@
     max-width: 970px;
   }
 
+  &__title-mobile {
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D1814;
+    display: none;
+  }
+
+  &__burger-mobile {
+    display: none;
+  }
+
+  &__close-mobile {
+    display: none;
+  }
+
   .visually-btn {
     padding-left: 45px;
     position: relative;
@@ -134,6 +151,12 @@
       }
     }
 
+    &:last-child {
+      svg {
+        display: none;
+      }
+    }
+
     &:not(:last-child) {
       margin-right: 25px;
       padding-right: 22px;
@@ -195,5 +218,31 @@
 
   }
 
+  &._mobile-active {
+    background-color: #0348B0;
 
+    .header__menu {
+      top: 95px;
+      z-index: 25;
+    }
+
+    .header__title-mobile {
+      color: #FFFFFF;
+    }
+
+    .header__control-personal a svg path, .header__control-personal button:first-of-type svg path {
+      fill: #FFFFFF;
+    }
+
+    .header__burger-mobile {
+      display: none;
+    }
+
+    .header__close-mobile {
+      display: block;
+    }
+    .header__control-personal button:hover svg path {
+      fill: #FFFFFF;
+    }
+  }
 }

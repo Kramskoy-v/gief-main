@@ -68,7 +68,14 @@
   .footer__bottom {
     padding: 15px 0 0;
   }
-
+  &__bottom-item-mobile {
+    max-width: 210px;
+    display: none;
+   a {
+     display: block;
+     text-align: center;
+   }
+  }
   .footer__bottom-list {
     display: flex;
     justify-content: space-between;
