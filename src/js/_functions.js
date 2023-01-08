@@ -57,9 +57,12 @@ closeMenu.addEventListener('click',()=> {
 } )
 
 
+
+
+
 export {
   sendData,
   toggleLoader,
   showInfoModal,
-  cutString
+  cutString,
 }

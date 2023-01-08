@@ -1,11 +1,22 @@
 import {Swiper} from "swiper/bundle";
 
-const swiperCaption = new Swiper('.caption-swiper', {
-  navigation: {
-    nextEl: '.caption-swiper__swiper-button-next',
-    prevEl: '.caption-swiper__swiper-button-prev'
+const swiperBg = new Swiper('.bg-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 3000,
   },
+  effect: "fade",
+  slidesPerView: 1,
+  spaceBetween: 0,
+});
 
+
+const swiperCaption = new Swiper('.caption-swiper', {
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 3200,
+  },
   slidesPerView: 1,
   spaceBetween: 50,
 });
@@ -88,3 +99,4 @@ const swiperSponsors = new Swiper('.sponsors-swiper', {
   }
 });
 
+export {swiperCaption}

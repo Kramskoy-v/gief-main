@@ -8,64 +8,13 @@
 <body class="page__body">
 <div class="site-container">
   <div class="modal-overlay"></div>
-  @include('partials/header.html')
+  @include('partials/header.html', {
+  'slider-bg': '_active',
+  'slider-caption': '_active',
+  'container-height' : '_active'
+  })
   <main class="main home-page">
-    <section class="section caption-slider">
-      <div class="container">
-        <div class="swiper caption-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="caption-swiper__img">
-                <img src="img/caption-slide_1.jpg"
-                     alt="caption-slide">
-              </div>
-              <div class="caption-swiper__content">
-                <p class="caption-swiper__description _sport">Внимание, студенческие спортивные соревнования</p>
-                <a href="#">Читать целиком</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="caption-swiper__img">
-                <img src="img/caption-slide_1.jpg"
-                     alt="caption-slide">
-              </div>
-              <div class="caption-swiper__content">
-                <p class="caption-swiper__description _science">Внимание, научная деятельность</p>
-                <a href="#">Читать целиком</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper__controls caption-swiper__controls">
-            <button class="caption-swiper__swiper-button-prev swiper-btn _prev">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M41.7 0.5H5.69995C2.93853 0.5 0.699951 2.73858 0.699951 5.5V41.5C0.699951 44.2614 2.93853 46.5 5.69995 46.5H41.7C44.4614 46.5 46.7 44.2614 46.7 41.5V5.5C46.7 2.73858 44.4614 0.5 41.7 0.5Z"
-                  fill="#AFCDFB"/>
-                <path
-                  d="M27.8 34.9001C28.8 33.9001 29.9 32.8001 31 31.7001C28.3 29.0001 25.6 26.3 22.9 23.6C25.6 20.9 28.3 18.2001 31 15.5001C29.9 14.4001 28.8 13.3 27.8 12.3C24 16.1 20.3 19.8 16.5 23.6C20.2 27.3 24 31.1001 27.8 34.9001Z"
-                  fill="white"/>
-              </svg>
-            </button>
-            <button class="caption-swiper__swiper-button-next swiper-btn _next">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M41.3 0.5H5.30005C2.53863 0.5 0.300049 2.73858 0.300049 5.5V41.5C0.300049 44.2614 2.53862 46.5 5.30005 46.5H41.3C44.0615 46.5 46.3 44.2614 46.3 41.5V5.5C46.3 2.73858 44.0615 0.5 41.3 0.5Z"
-                  fill="#AFCDFB"/>
-                <path
-                  d="M19.2 34.9001C18.2 33.9001 17.1 32.8001 16 31.7001C18.7 29.0001 21.4 26.3 24.1 23.6C21.4 20.9 18.7 18.2001 16 15.5001C17.1 14.4001 18.2 13.3 19.2 12.3C23 16.1 26.7 19.8 30.5 23.6C26.8 27.3 23 31.1001 19.2 34.9001Z"
-                  fill="white"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <svg class="word _g" width="111" height="236" viewBox="0 0 111 236" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path d="M110.6 221.4L52.8001 235.6L0.800049 24.3L98.2 0.400024L109.4 45.7L69.8 55.4L110.6 221.4Z"
-                fill="#EFF5FE"/>
-        </svg>
-      </div>
 
-    </section>
     <section class="section media-center">
       <div class="container">
         <div class="media-center__inner">
@@ -102,6 +51,11 @@
             <img src="img/media-center_5.jpg" alt="">
           </div>
         </div>
+        <svg class="word _g" width="111" height="236" viewBox="0 0 111 236" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path d="M110.6 221.4L52.8001 235.6L0.800049 24.3L98.2 0.400024L109.4 45.7L69.8 55.4L110.6 221.4Z"
+                fill="#EFF5FE"/>
+        </svg>
         <svg class="word _i" width="157" height="234" viewBox="0 0 157 234" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path
