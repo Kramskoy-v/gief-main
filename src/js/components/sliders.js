@@ -1,11 +1,11 @@
 import {Swiper} from "swiper/bundle";
 
 const swiperBg = new Swiper('.bg-swiper', {
+  grabCursor: true,
   loop: true,
   autoplay: {
     delay: 3000,
   },
-  effect: "fade",
   slidesPerView: 1,
   spaceBetween: 0,
 });

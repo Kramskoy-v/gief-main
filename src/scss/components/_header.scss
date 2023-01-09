@@ -2,15 +2,13 @@
   position: relative;
 
   &__info {
-    position: relative;
-    z-index: 2;
-
     .container {
       padding-bottom: 17px;
 
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       &._active {
         height: 545px;
       }
@@ -20,6 +18,7 @@
   &__info-wrapper {
     display: flex;
     justify-content: space-between;
+
   }
 
   &__logo {
@@ -27,6 +26,8 @@
     height: 170px;
     margin-top: 32px;
     margin-right: 15px;
+    position: relative;
+    z-index: 2;
   }
 
   &__title {
@@ -40,6 +41,8 @@
     color: #FFFFFF;
     background-color: rgba(25, 30, 43, 0.6);
     border-radius: 0 0 5px 5px;
+    position: relative;
+    z-index: 2;
   }
 
   &__title-mobile {
@@ -69,6 +72,7 @@
     color: #FFFFFF;
     background-color: rgba(25, 30, 43, 0.4);
     border-radius: 0 0 5px 5px;
+    z-index: 2;
 
     &:hover {
       color: #0348B0;
@@ -103,6 +107,8 @@
     color: #FFFFFF;
     background-color: rgba(25, 30, 43, 0.4);
     border-radius: 0 0 5px 5px;
+    position: relative;
+    z-index: 2;
 
     a {
       display: flex;
@@ -311,6 +317,7 @@
     background-color: #0348B0;
     height: 68px;
     display: none;
+
     &._active {
       display: block;
     }
@@ -461,17 +468,21 @@
 
   &__slider-bg {
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
     width: 1920px;
     display: none;
+
     &._active {
       display: block;
     }
+
     img {
       object-position: center;
       display: block;
     }
+
     .bg-swiper {
       height: 545px;
     }

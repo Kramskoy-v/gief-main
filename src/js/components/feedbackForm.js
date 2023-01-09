@@ -9,16 +9,23 @@ if (feedbackForm) {
   const agreementInput = feedbackForm.querySelector('.feedback__field[name="agreement_check"]')
   const agreementErrorMessage = feedbackForm.querySelector('.feedback__error-message_agreement')
 
-  feedbackForm.addEventListener('input', (e) => {
+  feedbackForm.addEventListener('focusin', (e) => {
     const inputTarget = e.target
 
-
-    if (inputTarget.value) {
+    if (inputTarget) {
       inputTarget.classList.add('feedback__field_active')
-    } else {
+    }
+  })
+
+  feedbackForm.addEventListener('focusout', (e) => {
+    const inputTarget = e.target
+
+    if (inputTarget && inputTarget.value === ''){
       inputTarget.classList.remove('feedback__field_active')
     }
   })
+
+
 
   const validationFeedback = new JustValidate(feedbackForm);
   validationFeedback

@@ -565,7 +565,7 @@
 
     &__field {
       width: 100%;
-      padding: 18px;
+      padding: 20px 18px 16px;
       @include montserrat-regular;
       font-size: 18px;
       line-height: 22px;
@@ -575,8 +575,7 @@
       outline: none;
 
       &:focus {
-        border: 1px solid #0D4CD3;
-        border-bottom: 2px solid #0D4CD3;
+        background-color: #FFFFFF;
       }
 
       &::placeholder {
@@ -587,7 +586,6 @@
       }
 
       &_active {
-        padding-top: 20px;
         background-color: #fff;
       }
 
